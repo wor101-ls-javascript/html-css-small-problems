@@ -1,0 +1,152 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 28px;
+	/* font: inherit; */
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END OF RESET */
+
+/* set the main header font */
+h1 {
+  font-family: "Franklin Gothic Heavy", Arial;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Set main padding and top border */
+header td{
+  border: none;
+  padding: 3px 0;
+}
+
+/* Set body font, border, padding */
+body {
+  font-family: "Helvetica Black", Helvetica, Arial;
+  font-size: 1rem;
+  max-width: 23rem;
+  padding: 15px;
+  margin: 8px;
+  border: 2px solid black;
+}
+
+main {
+  border-top: 1rem solid black;
+  padding: 5px 0;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  border-top: 1px solid black;
+}
+
+td, th {
+  padding: .20rem 0;
+}
+
+/* aligns last td element in main body to the right */
+main td:last-child {
+  text-align: right;
+}
+
+/* selects the header of the 2nd table of the main body */
+/* aligns text to the right */
+/* adds thick black border to top */
+main table:nth-child(2) th {
+  text-align: right;
+  border-top: .5rem solid black;
+}
+
+.indented-table {
+  margin-left: 1rem;
+  width: 22rem;
+}
+
+/* selects last table of the main body */
+/* adds thick border to top of the table */
+/* adds thin border to bottom of table */
+main table:last-child {
+  border-top: .5rem solid black;
+  border-bottom: 1px solid black;
+}
+
+/* Selecs p elements in footer */
+footer p {
+  font-size: .9rem;
+  display: inline-block;
+}
+
+/* Selects first p element of the footer */
+footer p:nth-child(1) {
+  vertical-align: top;
+  width: .5rem;
+}
+
+/* selects last p element in the footer */
+/* indents element to align with first p element */
+footer p:nth-child(2) {
+  width: 96%;
+}
+
+footer th, footer td {
+  font-weight: normal;
+  font-size: .8rem;
+  border: none;
+}
+
+footer th {
+  border-bottom: 1px solid black;
+}
+
+footer tr td {
+  margin-left: 2rem;
+}
+

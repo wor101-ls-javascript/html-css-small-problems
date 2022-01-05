@@ -1,0 +1,245 @@
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  color: #545459;
+  width: 70%;
+  margin: 0 auto 1rem auto;
+  padding: 1rem;
+  border: 2px solid grey;
+  /* line-height: 2rem; */
+}
+p {
+  color: #545459;
+  line-height: 2rem;
+  margin: 2rem 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  color: red;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+#section1 {
+  border-bottom: 2px black dashed;
+  margin-bottom: 2rem;
+}
+
+.outlined {
+  border: 2px dashed rgb(92, 89, 89);
+  margin: 2rem;
+  padding: 2rem;
+  width: 65%;
+  overflow: hidden;
+}
+
+.thirty_margins {
+  margin: 30px;
+}
+
+.padding {
+  background-color: green;
+  color: white;
+  padding:  2rem;
+}
+
+.floating {
+  float: left;
+  margin: 1rem;
+}
+
+.no_height_width {
+  background-color:dodgerblue;
+  color: white;
+}
+
+.height_padding_margin {
+  box-sizing: border-box;
+  height: 60px;
+  padding: 20px;
+  margin: 20px;
+  background-color: green;
+  color: white;
+}
+
+.ninety_width {
+  background-color: tomato;
+  color: white;
+  width: 90px;
+}
+
+.overflow_div {
+  box-sizing: border-box;
+  background-color: pink;
+  color: white;
+  width: 180px;
+  height: 120px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.box_1 {
+  float: left;
+  background-color: dodgerblue;
+  color: white;
+  border: 1px solid red;
+}
+
+.box_2 {
+  float: right;
+  background-color: tomato;
+  border: 1px solid red;
+  color: white;
+}
+
+.inline_navigation {
+  display: inline-block;
+  background-color: dodgerblue;
+  color: white;
+  line-height: 4rem;
+  width: 180px;
+  text-align: center;
+  margin: .5rem;
+
+
+}
+
+.center_div {
+  text-align: center;
+}
+
+.box_1_width_height {
+  box-sizing: border-box;
+  float: left;
+  background-color: tomato;
+  color: white;
+  width: 40%;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+
+.box_2_width_height {
+  box-sizing: border-box;
+  float: right;
+  background-color: dodgerblue;
+  color: white;
+  width: 50%;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.anchor_block {
+  display: block;
+  background-color: dodgerblue;
+  color: white;
+  text-align: center;
+  line-height: 2rem;
+  height: 2rem;
+  margin: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+.box1_float {
+  background-color: tomato;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+  float: left;
+  width: 50%;
+  height: 100px;
+}
+
+.box2_float {
+  background-color: dodgerblue;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+  float: left;
+  width: 50%;
+  height: 100px;
+}
+
+.box3_float {
+  background-color: seagreen;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  float: left;
+  width: 100%;
+  height: 50px;
+}
+
+.pre_paragraph {
+  white-space: pre;
+  line-height: 1rem;
+}
+
+ul {
+  font-style: italic;
+  line-height: 1.5rem;
+}
+
+.fixed_position {
+  position: fixed;
+  bottom: 5%;
+  left: 3%;
+  box-sizing: border-box;
+  background-color: dodgerblue;
+  color: white;
+  text-align: center;
+  height: 6rem;
+  width: 14rem;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+}
+
+.relative_position {
+  position: relative;
+  bottom: -4rem;
+  left: -4rem;
+  box-sizing: border-box;
+  background-color: tomato;
+  color: white;
+  text-align: center;
+  height: 4rem;
+  width: 24rem;
+  padding: 1.5rem 3rem;
+  border-radius: 15px;  
+}
+
+.absolute_position {
+  position: absolute;
+  top: -250px;
+  left: 230px;
+  box-sizing: border-box;
+  background-color: green;
+  color: white;
+  text-align: center;
+  height: 6rem;
+  width: 12rem;
+  text-align: center;
+  padding: 2rem 2rem;
+  border-radius: 15px;   
+}
+
+.relative_div {
+  position: relative;
+}

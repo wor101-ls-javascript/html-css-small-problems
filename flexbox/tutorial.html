@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>your page title goes here</title>
+    <meta charset="utf-8"/>
+    <style>
+      body {
+        background-color: lightgray;
+      }
+
+      .form-row {
+        padding: 10px 0;
+        display: flex;
+      }
+
+      .form-row label {
+        padding-right: 10px;
+        /* flex: 1; */
+      }
+
+      .form-row input {
+        flex: 1;
+      }
+
+      .column-layout {
+        max-width: 1300px;
+        background-color: #FFF;
+        margin: 40px auto 0 auto;
+        line-height: 1.65;
+        padding: 20px 50px;
+        display: flex;
+      }
+
+      .main-column {
+        flex: 3;
+        order: 2;
+      }
+
+      .sidebar-one {
+        flex: 1;
+        order: 1;
+      }
+
+      .sidebar-two {
+        flex: 1;
+        order: 3;
+      }
+
+      .call-outs-container {
+        max-width: 1400px;
+        margin: 40px auto 0 auto;
+      }
+
+      @media (min-width: 900px) {
+        .call-outs-container {                  
+          display: flex;
+          align-items: stretch; /* default value is strecth */
+          justify-content: space-between; /* places content with space between each element */        
+        }
+      }
+      .call-out {
+        box-sizing: border-box;
+        padding: 20px;
+        margin-bottom: 20px;
+        /* flex: 1; */
+        flex-basis: 30%; /* Flexbox way of doing width */
+        /* width: 30%; */
+      }
+
+      .call-out:nth-child(1) {background-color: #c0dbe2;}
+      .call-out:nth-child(2) {background-color: #cdf1c3;}
+      .call-out:nth-child(3) {background-color: #ccb9da;}
+
+      .fixed-size-container {
+        max-width: 1400px;
+        margin: 40px auto 0 auto;
+        background-color: #FFF;
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap:  wrap;
+      }
+
+      .fixed-size {
+        width: 150px;
+        height: 100px;
+        background-color: #990b47;
+        color: #FFF;
+        line-height: 100px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 60px;
+        margin-bottom: 20px;
+      }
+
+      .banner {
+        height: 400px;
+        max-width: 700px;
+        margin: 40px auto 0 auto;
+        background-color: #2a2a2a;
+        display: flex;
+      }
+
+      .center-me {
+        color: #FFF;
+        font-size: 50px;
+        margin: auto; /* as long as parent element set to flex auto on all margins centers object */
+      }
+
+      .equal-height-container {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+      }
+
+      .first {
+        background-color: #FFF;
+        padding: 20px;
+        flex: 1;
+      }
+
+      .second {
+        background-color: yellow;
+        flex: 1;
+        display: flex;
+        flex-direction: column; /* default is row */
+      }
+
+      .second-a {
+        background-color: #c0dbe2;
+        flex: 1;
+      }
+
+      .second-b {
+        background-color: tomato;
+        flex: 1;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" method="post">
+        <div class="form-row">
+          <label for="name">Name:</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="form-row">
+          <label for="favColor">Favorite Color:</label>
+          <input type="text" id="favColor">
+        </div>
+      </form>
+    </div>
+    <div class="column-layout">
+      <div class="main-column">
+        <h2>Main Colum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed dolor tellus. Nunc ut metus ut mi fermentum hendrerit nec et justo. Sed commodo dictum imperdiet. Maecenas ac mattis turpis, at porta erat. Sed feugiat, nisi nec consequat viverra, lorem mauris posuere risus, gravida commodo turpis mi quis ligula. Pellentesque mollis tristique sodales. Quisque odio mi, sagittis sit amet neque nec, vehicula blandit justo. Sed aliquam libero a quam elementum, nec hendrerit velit luctus. Nullam tincidunt venenatis iaculis. Pellentesque convallis, nunc vel accumsan sagittis, sem dui suscipit libero, in viverra ipsum est sit amet libero. Nulla malesuada sagittis tempus. Maecenas quis erat eget turpis interdum venenatis. Integer maximus, eros eu sollicitudin malesuada, sapien elit lobortis sem, aliquet porttitor odio elit in lorem. Duis non dolor turpis. Vivamus gravida eu libero eu luctus.        </p>
+        <p>Vivamus in ligula at lacus consequat aliquet. Sed nec sapien efficitur, venenatis erat vel, tempus lorem. Cras in lectus eget ligula eleifend mattis. Mauris id tellus felis. Donec pulvinar tortor ac lectus aliquam, non imperdiet est placerat. Quisque vel justo eu sapien facilisis ultrices. Curabitur suscipit at metus eget bibendum. Phasellus id euismod quam. Nunc et lacus ut elit ultricies sollicitudin sed sit amet sapien. Aenean id ante luctus, tincidunt arcu a, lacinia tortor. Integer mattis sit amet dui in porttitor.        </p>
+        <p>Etiam tincidunt lacus non purus tristique, nec interdum lacus finibus. Donec id leo scelerisque, ultrices leo sed, vehicula nisi. Nam accumsan, dolor sit amet pellentesque ultrices, felis sapien consectetur est, ut tristique ex nulla nec magna. Suspendisse pharetra gravida luctus. Nullam ac nisl a ligula tempus facilisis. Praesent erat augue, fringilla vel mauris vel, scelerisque pretium lectus. Donec id cursus ipsum. Nam bibendum scelerisque diam, non vulputate ipsum imperdiet non. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed consectetur nulla id odio pellentesque, ut auctor sapien volutpat. Morbi pellentesque eros sed mi sagittis tempus. Aenean porta volutpat lectus at convallis. Sed elementum id libero in suscipit. Suspendisse dignissim nisi quis mi luctus malesuada. Suspendisse cursus, eros eu tincidunt commodo, turpis arcu pulvinar sem, in sollicitudin felis justo in odio. Donec dignissim lorem eget purus interdum molestie.        </p>
+        <p>Cras finibus dui metus, maximus interdum arcu posuere at. Aenean maximus pulvinar felis, et porta elit congue sit amet. Donec laoreet purus id rhoncus auctor. In quis magna enim. Suspendisse nec pulvinar est. Aliquam vitae lacinia nisi. Nunc fringilla id enim in vestibulum. Donec viverra malesuada congue. Donec ac varius sapien. Sed vel aliquam mauris. Vestibulum velit massa, placerat ac dolor at, volutpat pretium tortor. Praesent pretium cursus maximus. In porttitor est non urna auctor ornare.        </p>
+      </div>
+      <div class="sidebar-one">
+        <h3>Sidebar One</h3>
+        <p>Cras finibus dui metus, maximus interdum arcu posuere at. Aenean maximus pulvinar felis, et porta elit congue sit amet. Donec laoreet purus id rhoncus auctor. In quis magna enim. Suspendisse nec pulvinar est. Aliquam vitae lacinia nisi. Nunc fringilla id enim in vestibulum. Donec viverra malesuada congue. Donec ac varius sapien. Sed vel aliquam mauris. Vestibulum velit massa, placerat ac dolor at, volutpat pretium tortor. Praesent pretium cursus maximus. In porttitor est non urna auctor ornare.        </p>
+      </div>
+      <div class="sidebar-two">
+        <h3>Sidebar Two</h3>
+        <p>Etiam tincidunt lacus non purus tristique, nec interdum lacus finibus. Donec id leo scelerisque, ultrices leo sed, vehicula nisi. Nam accumsan, dolor sit amet pellentesque ultrices, felis sapien consectetur est, ut tristique ex nulla nec magna. Suspendisse pharetra gravida luctus. Nullam ac nisl a ligula tempus facilisis. Praesent erat augue, fringilla vel mauris vel, scelerisque pretium lectus. Donec id cursus ipsum. Nam bibendum scelerisque diam, non vulputate ipsum imperdiet non. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed consectetur nulla id odio pellentesque, ut auctor sapien volutpat. Morbi pellentesque eros sed mi sagittis tempus. Aenean porta volutpat lectus at convallis. Sed elementum id libero in suscipit. Suspendisse dignissim nisi quis mi luctus malesuada. Suspendisse cursus, eros eu tincidunt commodo, turpis arcu pulvinar sem, in sollicitudin felis justo in odio. Donec dignissim lorem eget purus interdum molestie.        </p>
+      </div>
+    </div>
+
+    <div class="call-outs-container">
+      <div class="call-out">
+        <h4>Feature 1</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero nibh, feugiat vitae mi feugiat, dapibus lacinia mi. Nunc tincidunt tortor eget massa vulputate mollis. Nam vel nulla eu eros venenatis pharetra porta et tortor. Nullam purus lacus, ultricies non neque non, pulvinar euismod lorem. Nulla facilisi. Donec dictum dui leo. Sed sed erat nisl. Quisque hendrerit dui in vestibulum egestas. Praesent sodales, dolor non tempor tempor, felis est lacinia quam, a fringilla nulla nunc vel lorem. Maecenas sagittis sem velit, et iaculis dui dignissim in. Vivamus metus justo, aliquet a tristique eu, volutpat et sem. Vestibulum feugiat ultrices sodales. Ut et elit eu lorem suscipit fermentum. Quisque massa nibh, volutpat ut elit et, euismod ullamcorper mi. Suspendisse auctor ante dignissim nunc porta ultrices ut elementum tortor.        </p>
+      </div>
+
+      <div class="call-out">
+        <h4>Feature 2</h4>
+        <p>Vivamus a dictum velit. Vestibulum vel tincidunt massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec euismod consequat condimentum. Etiam dictum interdum ante non hendrerit. Quisque sed pretium massa, posuere imperdiet nibh. Nulla nec felis ac lacus dignissim egestas. Proin ut posuere dolor. Nulla ultricies tellus sapien, quis suscipit lacus elementum vitae.        </p>
+      </div>
+
+      <div class="call-out">
+        <h4>Feature 3</h4>
+        <p>Cras finibus dui metus, maximus interdum arcu posuere at. Aenean maximus pulvinar felis, et porta elit congue sit amet. Donec laoreet purus id rhoncus auctor. In quis magna enim. Suspendisse nec pulvinar est. Aliquam vitae lacinia nisi. Nunc fringilla id enim in vestibulum. Donec viverra malesuada congue. Donec ac varius sapien. Sed vel aliquam mauris. Vestibulum velit massa, placerat ac dolor at, volutpat pretium tortor. Praesent pretium cursus maximus. In porttitor est non urna auctor ornare.        </p>
+      </div>
+    </div>
+    <div class="fixed-size-container">
+      <div class="fixed-size">1</div>
+      <div class="fixed-size">2</div>
+      <div class="fixed-size">3</div>
+      <div class="fixed-size">4</div>
+      <div class="fixed-size">5</div>
+    </div>
+
+    <div class="banner">
+      <div class="center-me">Center Me Plz</div>
+    </div>
+
+    <div class="equal-height-container">
+      <div class="first">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non sapien ac quam pellentesque molestie. Nulla ornare sem sit amet ex pretium, eu dignissim neque varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed et libero sed ante blandit placerat a ac quam. Ut eu nibh suscipit sapien lacinia rhoncus. Quisque diam nisi, posuere vel sem nec, porttitor efficitur turpis. Nam nisi metus, dignissim et consectetur at, varius ac dolor. Mauris eget pellentesque tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.        </p>
+        <p>Donec lorem sem, accumsan et velit a, porttitor pulvinar mauris. Vestibulum non odio vel turpis dictum imperdiet. Praesent iaculis malesuada pellentesque. Sed nisi augue, fringilla vel lacinia quis, vulputate in enim. Pellentesque sit amet nunc est. Nam malesuada ligula maximus, bibendum nibh non, dapibus massa. Sed lectus arcu, volutpat sit amet sagittis id, vehicula id urna. Duis vel dui in leo laoreet rutrum. Phasellus dui enim, egestas eu condimentum non, luctus et augue. Duis dapibus augue vel magna vulputate, eu finibus turpis varius. Donec efficitur nunc vel dictum fermentum. Aliquam malesuada vitae dui vel ullamcorper. Fusce sodales magna at odio fermentum bibendum. Aliquam vel vehicula nisi. Suspendisse potenti. Suspendisse vitae vehicula lacus.        </p>
+        <p>Vivamus vel nisi lectus. Aenean maximus ultrices malesuada. Mauris nunc est, efficitur vel lorem vitae, volutpat varius mi. Mauris neque lacus, venenatis sodales neque vitae, mattis accumsan tellus. Fusce maximus posuere tortor, et tincidunt lorem bibendum at. Nam hendrerit, nisi cursus mollis iaculis, nunc velit condimentum sem, tincidunt tristique mi diam id erat. Aliquam erat volutpat. Quisque sed magna condimentum ante accumsan laoreet. Nunc iaculis odio sit amet arcu semper, vel bibendum metus gravida. Phasellus magna tortor, euismod a mi ut, iaculis scelerisque justo. Donec ac tellus aliquet quam commodo malesuada vel eu quam.        </p>
+        <p>Cras vitae leo lobortis, tempor enim sit amet, tempor odio. Sed dictum iaculis faucibus. Pellentesque aliquam mi metus. Donec commodo augue arcu, id vulputate felis sodales ac. Suspendisse dui magna, vestibulum at tellus eu, tincidunt commodo augue. Nam mollis, nunc ut bibendum sollicitudin, nisi libero maximus nunc, vitae efficitur nisl quam sit amet quam. Sed ut elit vitae odio eleifend blandit. Curabitur at arcu nec nunc pretium facilisis id non mi. Cras in purus lorem. Duis est neque, tincidunt vitae elit vitae, dignissim pulvinar sapien. Suspendisse rutrum arcu sed lectus commodo, euismod congue libero bibendum. Nunc faucibus justo nec sodales sagittis. Aliquam ut volutpat lorem, in aliquam nulla.        </p>
+      </div>
+      <div class="second">
+        <div class="second-a">A</div>
+        <div class="second-b">B</div>
+      </div>
+    </div>
+  </body>
+</html>

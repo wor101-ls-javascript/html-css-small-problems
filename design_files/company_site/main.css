@@ -1,0 +1,177 @@
+@import url("white-space-reset.css");
+
+* {
+  margin: 0 auto;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1000px;
+  grid-template-rows: 495px 70px auto 115px 140px;
+  grid-template-areas: 
+    "header"
+    "navigation"
+    "main"
+    "footer"
+    ".";
+  background-image: url("bg_body.gif");
+  width: 1000px;
+  padding: 0 100px;
+}
+
+
+.header {
+  grid-area: header;
+  align-self: end;
+  padding-bottom: 100px;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  align-content: center;
+}
+
+.navigation li {
+  padding: 0 38px;
+}
+
+.navigation a {
+  text-decoration: none;
+  font-size: 26px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+  color: #cacaca  
+}
+
+.navigation a.current {
+  color: #6db9ff;  
+}
+
+.headerlogo > img {
+  box-sizing: border-box;
+  object-fit: cover;
+  width: 100%;
+  /* padding: 30px; */
+  height: auto;
+}
+
+
+.main {
+  grid-area: main;
+  width: 100%;
+  background-color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  display: grid;
+  align-items: end;
+  grid-template-columns: 1000px;
+  grid-template-rows: 140px 112px 204px 56px 204px;
+  "about-header"
+  "about-text"
+  "founder-header"
+  "founder-name"
+  "founder-text";
+}
+
+.main_flex {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.horizontal_flex {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 220px;
+  padding-top: 100px;
+}
+
+.horizontal_flex li {
+  padding: 0 18px;
+  list-style: none;
+  color: #3e59b2;
+  font-size: 24px;
+
+}
+
+.horizontal_flex figcaption {
+  text-align: center;
+}
+
+
+.main h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: rgb(69, 73, 77);
+}
+
+.main_flex > h1 {
+  font-size: 36px;
+  color: rgb(69, 73, 77);
+  padding-top: 124px;
+  padding-bottom: 40px;
+  
+}
+
+.main_flex > h2 {
+  color: #3e59b2;
+  font-size: 24px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.main_flex > p {
+  box-sizing: border-box;
+  padding: 0 92px 32px 92px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.main p {
+  font-size: 20px;
+  font-weight: semi-bold;
+  padding: 0 92px;
+  text-align: center;
+}
+
+
+
+.main h1::after,
+.main h1::before,
+.main_flex h1::after,
+.main_flex h1::before {
+  font-size: 36px;
+  font-weight: normal;
+  content: "•";
+}
+
+.main h2 {
+ color: rgb(62, 152, 178); 
+}
+
+.founder-text {
+  padding-top: 36px;
+  align-self: center;
+}
+
+.footer {
+  grid-area: footer;
+  box-sizing: border-box;
+  background-color: rgb(230, 230, 255);
+  width: 100%;
+  justify-self: end;
+  padding-left: 250px;
+}
+
+.footer div {
+  display: inline-block;
+  padding: 32px 61px;
+}

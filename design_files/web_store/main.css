@@ -1,0 +1,84 @@
+@import url("white-space-reset.css");
+
+html {
+  background-color: black;
+}
+
+body {
+  background-color: #ffd505;
+  font-family: 'Nunito Sans', sans-serif;
+  max-width: 980px;
+  height: 880px;
+  margin: 0 auto 30px auto;
+
+}
+
+header {
+  background-color: #047ec1;
+  color: white;
+  font-size: 42px;
+  font-weight: bolder;
+  margin: 0 36px 0 36px;
+  padding: 24px 0 20px 26px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+main {
+  background-color: #ececec;
+  height: 616px;
+  margin: 30px 36px 30px 36px;
+  padding: 30px 24px 40px 24px;
+}
+
+main h1 {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.product_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.product_preview {
+  height: 236px;
+  width: 200px;
+  background-color: white;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.product_preview a {
+  text-decoration: none;
+  color: black;
+}
+
+.product_name {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 22px 0 0 15px;
+}
+
+.product_price {
+  padding-left: 15px;
+}
+
+.preview_image {
+  display: block;
+  max-width: 158px;
+  max-height: 138px;
+  margin: 12px auto 0 auto;
+}
+
+input[type="checkbox"] {  display: none; }
+input:checked + img {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  width: 400px;
+  height: auto;
+  margin: 0 0 0 -200px;
+}
+

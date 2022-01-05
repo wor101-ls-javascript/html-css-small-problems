@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>your page title goes here</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="nav-wrapper">      
+      <input type="checkbox" class="toggler" />
+      <img src="images/hamburger.png" />
+      <nav id="navigation">
+        <div class="group_header">
+          <a id="all_link" href="#"><img src="images/all-todos.png" alt="All Todos"/></a>
+          <h2 id="all_header">All Todos</h2>
+          <div class="count">
+            <p id="all_count" class="circle">18</p>
+          </div>        
+        </div>
+        <ul>
+          <li class="selected">
+            <a class="list_link" href="#">
+              <p class="date">02/16</p>
+              <div class="count">
+                <p class="selected circle">8</p>
+              </div>
+            </a>          
+          </li>
+          <li class="">
+            <a class="list_link" href="#">
+              <p class="date">03/16</p>
+              <div class="count">
+                <p class="circle">2</p>
+              </div>
+            </a>          
+          </li>
+          <li class="">
+            <a class="list_link" href="#">
+              <p class="date">04/16</p>
+              <div class="count">
+                <p class="circle">1</p>
+              </div>
+            </a>          
+          </li>
+          <li class="">
+            <a class="list_link" href="#">
+              <p class="date">05/16</p>
+              <div class="count">
+                <p class="circle">1</p>
+              </div>
+            </a>          
+          </li>
+          <li class="">
+            <a class="list_link" href="#">
+              <p class="date">05/16</p>
+              <div class="count">
+                <p class="circle">6</p>
+              </div>
+            </a>          
+          </li>
+        </ul>
+        <div class="group_header">
+          <a href="#"><img src="images/done.png" alt="All Todos"/></a>
+          <h2>All Todos</h2>
+        </div>
+        <ul>
+          <li>
+            <a class="list_link" href="#">
+              <p class="date strike_through">02/15</p>
+            </a>          
+          </li>
+          <li>
+            <a class="list_link" href="#">
+              <p class="date strike_through">03/16</p>
+  
+            </a>          
+          </li>
+          <li>
+            <a class="list_link" href="#">
+              <p class="date strike_through">04/16</p>
+            </a>          
+          </li>
+          <li>
+            <a class="list_link" href="#">
+              <p class="date strike_through">05/16</p>
+            </a>          
+          </li>
+          <li>
+            <a class="list_link" href="#">
+              <p class="date strike_through">06/16</p>
+            </a>          
+          </li>
+        </ul>
+  
+      </nav>
+    </div>
+
+    <main>
+      <a id="show_nav" href="#navigation"><img src="images/hamburger.png" /></a>
+      <a id="hide_nav" href="#"><img src="images/hamburger.png" /></a>
+      <section class="list_header">
+        <h1>02/16</h1>
+        <p class="circle selected">8</p>
+      </section>
+      <ul>
+        <li>
+          <label class="modal_label blue_text">
+            <input type="checkbox"/>
+            <form class="modal">
+              <label>Title</label>
+              <input type="text" />
+      
+              <label>Due Date</label>
+              <input type="date" />
+      
+              <label class="top_aligned">Description</label>
+              <textarea placeholder="Description"></textarea>
+              <div class="modal_buttons">
+                <button type="submit" value="save">Save</button>
+                <button type="submit" value="complete">Mark As Complete</button>
+              </div>            
+            </form> 
+            <a href="#"><img id="plus" src="images/plus.png" alt="Plus Sign" /></a>
+            Add new to do
+          </label>
+          
+        </li>
+        <li>
+          <input type="checkbox" />
+          <a href="#">Item 1</a>
+          <input type="image" id="item_1" alt="trash" src="images/trash.png" />
+        </li>
+        <li>
+          <input type="checkbox" />
+          <a href="#">Item 2</a>
+          <input type="image" id="item_2" alt="trash" src="images/trash.png" />
+        </li>
+        <li>
+          <input type="checkbox" />
+          <a class="strike_through" href="#">Item 3</a>
+          <input type="image" id="item_3" alt="trash" src="images/trash.png" />
+        </li>
+        <li>
+          <input type="checkbox" />
+          <a class="strike_through" href="#">Item 4</a>
+          <input type="image" id="item_4" alt="trash" src="images/trash.png" />
+        </li>
+        <li>
+          <input type="checkbox" />
+          <a class="strike_through" href="#">Item 5</a>
+          <input type="image" id="item_5" alt="trash" src="images/trash.png" />
+        </li>
+        <li>
+          <input type="checkbox" />
+          <a href="#">Item 6</a>
+          <input type="image" id="item_6" alt="trash" src="images/trash.png" />
+        </li>
+        <li>
+          <input type="checkbox" />
+          <a href="#">Item 7</a>
+          <input type="image" id="item_7" alt="trash" src="images/trash.png" />
+        </li>
+        <li>
+          <input type="checkbox" />
+          <a href="#">Item 8</a>
+          <input type="image" id="item_8" alt="trash" src="images/trash.png" />
+        </li>
+        <li>
+          <input type="checkbox" />
+          <a href="#">Item 9</a>
+          <input type="image" id="item_9" alt="trash" src="images/trash.png" />
+        </li>
+      </ul>
+      <form class="modal">
+        <label>Title</label>
+        <input type="text" />
+
+        <label>Due Date</label>
+        <input type="date" />
+
+        <label class="top_aligned">Description</label>
+        <textarea placeholder="Description"></textarea>
+        <div class="modal_buttons">
+          <button type="submit" value="save">Save</button>
+          <button type="submit" value="complete">Mark As Complete</button>
+        </div>            
+      </form> 
+    </main>
+  </body>
+
+</html>

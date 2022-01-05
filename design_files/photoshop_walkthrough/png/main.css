@@ -1,0 +1,124 @@
+@import url("white-space-reset.css");
+
+body {
+  font: normal 18px 'Roboto Condensed', sans-serif;
+  color: #3e606f;
+  background-image: linear-gradient(to bottom, #d2dbbd, #fcfff5);
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  max-width: 960px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+header li {
+  display: inline-block;
+  background-color: white;
+  padding: 12px 40px 17px 40px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+.selected {
+  background-color: rgb(146, 170, 158);
+  color: white;
+}
+
+header a {
+  text-decoration: none;
+  color: rgb(146, 170, 158)
+  
+}
+
+.navigation {
+  margin-bottom: 0;
+  align-self: flex-end;
+}
+
+.title {
+  align-self: center;
+  padding-left: 134px;
+  padding-bottom: 43px;
+  padding-top: 70px;
+  background: transparent url("logo.png") 0 0 no-repeat;
+  color: #193441;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+main {
+  display: grid;
+  max-width: 960px;
+  margin: 0 auto 30px auto;
+  grid-template-columns: 575px 385px;
+  grid-template-rows: auto auto auto 150px 415px;
+  grid-template-areas: 
+    "masthead masthead"
+    "main-header main-header"
+    "paragraph1 paragraph1"
+    "paragraph2 article-image"
+    "paragraph3 article-image";
+
+  background-color: rgb(254, 254, 254);
+  box-shadow: 0 5px 5px #b5b5b5;
+}
+
+.masthead {
+  grid-area: masthead;
+
+}
+
+.masthead > img {
+  box-sizing: border-box;
+  object-fit: cover;
+  width: 100%;
+  padding: 30px;
+  height: auto;
+}
+
+.main-header {
+  font-size: 32px;
+  font-weight: normal;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  grid-area: main-header;
+}
+
+.paragraph1 {
+  grid-area: paragraph1;
+  padding: 12px 30px;
+}
+
+.paragraph2 {
+  grid-area: paragraph2;
+  padding: 12px 30px;
+}
+
+.paragraph3 {
+  grid-area: paragraph3;
+  padding: 12px 30px;
+}
+
+.article-image {
+  grid-area: article-image;
+}
+
+.article-image > img {
+  box-sizing: border-box;
+  object-fit: cover;
+  width: 100%;
+  padding: 12px 30px 30px 0;
+  height: auto;
+}
+
+footer {
+  max-width: 960px;
+  margin: 15px auto 30px auto;
+  font-size: 15px;
+}
+
+
+

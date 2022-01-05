@@ -1,0 +1,50 @@
+html {
+  font: normal 16px Helvetica, Arial, sans-serif;
+}
+
+fieldset {
+  border: none;
+  padding-left: 30%;
+  padding-right: 30%
+}
+
+form {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+dt, dd {
+  box-sizing: border-box;
+  margin-left: 0;
+}
+
+dd {
+  margin-bottom: 1rem;
+}
+
+dl input {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #cecece;
+  font: normal 14px Helvetica, Arial, sans-serif;
+  height: 30px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+
+li input {
+  width: fit-content;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+}
